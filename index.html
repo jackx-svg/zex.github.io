@@ -5,108 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 设置响应式设计，确保页面可以在不同设备上显示 -->
     <title>Phyx的个人网页</title><!-- 网页标题，显示于浏览器的标签栏中 -->
     <style>   /* 这是一个CSS */
-        body {
-            font-family: Arial, sans-serif;  /* 字体 */
+        body { 
+            font-family: "宋体", "SimSun", serif; /* 字体 */
+            /*font-family: Arial, sans-serif;*/ 
             margin: 0;/* 外边距 */
             padding: 0; /* 内边距 */
-            background-color: #282525c9;/* 背景色 */
-            color: #fefefefe;/* 字体颜色 */
+            background-color: #000000;/* 背景色 */
+            color: #fefefe;/* 字体颜色 */
         }
         header {          /* 网页顶部 */                       
-            background-color: #771c95e3;
+            background-color: #cbcbcb;
             color: rgb(0, 0, 0);
             padding: 15px;
             text-align: center;
         }
-        nav {          /* 导航栏 */
-            display: flex;    
-            justify-content: center;
-            background-color: #333;
+        nav {          /* 导航栏用于跳转不同的部分的链接 */
+            display: flex;    /*将导航栏居中对齐*/
+            justify-content: center;   
+            background-color: #616161c7;
         }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
+        nav a {          /*每一个a 都表示一个跳转链接，这里设置了它的样式*/
+            color: white;    /*ziti */
+            padding: 14px 20px;    /*内边距大小*/
+            text-decoration: none;   /*无下滑线*/
+            text-align: center;     
         }
-        nav a:hover {
+        nav a:hover {                 /*鼠标悬停时候的样式设计*/
             background-color: #575757;
         }
-        .content {
-            padding: 20px;
+        .content {         /*网页内容区域的内边距*/
+            padding: 20px; 
         }
         .section {
-            margin: 30px 0;
+            margin: 30px 0;        /*每个区域板块的上下边距*/
         }
-        .section h2 {
+        .section h2 {              /*节的标题的设计*/
             font-size: 1.8em;
-            color: #4CAF50;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .contact-form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #45a049;
+            color: #6fa0c5;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>欢迎来到我的个人网页</h1>
+    <h1>Phyx的个人网页</h1>
+    <h2 >吃饭，睡觉，学物理。-esp</h2>
 </header>
 
 <nav>
     <a href="#about">关于我</a>
-    <a href="#projects">项目展示</a>
-    <a href="#contact">联系我</a>
+    <a href="#projects">研究方向</a>
+    <a href="#contact">联系方式</a>
 </nav>
 
 <div class="content">
     <!-- About Me Section -->
     <div class="section" id="about">
         <h2>关于我</h2>
-        <p>你好，我是一个物理学研究生，专注于量子力学、光与物质相互作用、凝聚态物理。我对科学研究充满激情，喜欢用数学模型和仿真软件探索复杂的物理问题。</p>
+        <p>你好，我是一名物理学研究生，目前还在学习过程中，专注于凝聚态理论物理。我对物理研究充满激情，喜欢用toy model（code能力不强）及简单算法探索理解复杂的物理问题。</p>
+        <p><strong>做物理学习研究，即要推公式，更多的是思考的物理的dynamic picture  ，简单弄个code算一算或者画个图，最后将结果以方便别人了解学习的方式呈现出来（latex敲出来），只有这样，才能说学到了一点物理，也是在做物理！</strong></p>
     </div>
 
     <!-- Projects Section -->
     <div class="section" id="projects">
-        <h2>我的项目</h2>
+        <h2>研究方向</h2>
         <ul>
             <li><strong>量子力学实验模拟</strong>：通过计算机仿真研究量子力学实验中的粒子行为。</li>
             <li><strong>光与物质相互作用模型</strong>：创建模型分析激光与物质相互作用的过程。</li>
-            <li><strong>凝聚态物理研究</strong>：使用数值方法研究固态物理中的量子效应。</li>
+            <li><strong>凝聚态理论研究</strong>：使用数值方法研究固体物理中的量子效应，研究强关联体系，量子输运，以及量子自旋液体等。</li>
         </ul>
     </div>
 
     <!-- Contact Section -->
     <div class="section" id="contact">
-        <h2>联系我</h2>
-        <p>如果你对我的工作感兴趣，或者有任何问题，欢迎通过以下方式与我联系：</p>
-        <form class="contact-form">
-            <label for="name">姓名：</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">电子邮件：</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">留言：</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">提交</button>
-        </form>
+        <h2>联系方式</h2>
+        <p>如果你对我的工作感兴趣，或者有任何问题，欢迎通过以下邮箱与我联系：</p>
+        <strong><a href="mailto:xuzhuphy@163.com">xuzhuphy@163.com</a></strong>
+        <p>该个人网页见我的GitHub 主页：<a href="https://github.com/jackx-svg?tab=repositories" target="_blank">jackx-svg</a> </p>
     </div>
 </div>
 
